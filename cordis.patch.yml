@@ -1,0 +1,8 @@
+# dsh-turn-timeline bundle patch
+#
+# Installed by `dsh plugin --profile <name> add <path-or-repo>`: the loader
+# mounts this entry, and the client-modules layer ships `lib/client.js` because
+# `package.json` declares `dsh.client.platform = "web"`.
+- insert:
+    - id: dsh-turn-timeline
+      name: 'dsh-turn-timeline'
