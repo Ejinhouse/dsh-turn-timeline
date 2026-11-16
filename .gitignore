@@ -1,0 +1,5 @@
+// GitHub Release assets are regenerated per tag; keep the repo source-only.
+node_modules/
+*.tgz
+.DS_Store
+Thumbs.db
