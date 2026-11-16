@@ -1,0 +1,50 @@
+{
+  "name": "dsh-turn-timeline",
+  "version": "1.2.0",
+  "description": "DSH web plugin: a left-sidebar panel that turns every session into a task timeline — one row per task stretch, the turns behind it, the files each turn produced, and a click straight into the right sidebar preview.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "timeline",
+    "turns",
+    "sidebar",
+    "deliverables"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-0 <0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ejinhouse/dsh-turn-timeline.git"
+  },
+  "homepage": "https://github.com/Ejinhouse/dsh-turn-timeline#readme",
+  "bugs": {
+    "url": "https://github.com/Ejinhouse/dsh-turn-timeline/issues"
+  },
+  "license": "MIT"
+}
