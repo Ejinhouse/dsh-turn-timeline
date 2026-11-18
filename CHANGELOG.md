@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.1 — 2026-11-18
+
+The HTTP surface now applies DSH's own admission check.
+
+### Access check
+
+- Every route under `/turn-timeline` starts with
+  `ctx.connection.requestRejection(request)` and answers `401`/`403` when it
+  refuses — the same Host/Origin fence plus authenticated-live-peer check the host
+  applies to its own routes.
+- Reported by the market reviewer: without it, any page open in the browser could
+  call `/turn-timeline/file?session=&path=` and read a file the session produced,
+  and `POST /turn-timeline/layout` could rewrite the panel arrangement.
+- `connection` is now listed in `inject`; the call is optional-chained, so an older
+  host without the service keeps working instead of losing the panel.
+
 ## 1.2.0 — 2026-11-13
 
 Panel rows now carry the same names as the workspace's session list, not the head
