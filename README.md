@@ -4,6 +4,14 @@ A left-sidebar panel that turns every session into a **task timeline**: one row 
 
 DSH sessions are linear. A single conversation usually contains several jobs — research, build, fix, test — and once it is long enough the only thing you remember is the *last* result. Everything before it is buried in scrollback. This panel indexes that scrollback: it reads the session logs, folds turns into task stretches, and gives every produced file a click target.
 
+## Screenshots
+
+| Turns | Ledger | In-panel preview |
+| --- | --- | --- |
+| <img src="assets/timeline-turns.png" width="300" alt="One row per turn, with tool badges, file chips and deliverable markers"> | <img src="assets/timeline-ledger.png" width="300" alt="Ledger folded out: open todos, items to verify, owner and age"> | <img src="assets/timeline-preview.png" width="300" alt="Right-click a file chip to preview that file inside the panel"> |
+
+Rendered from an invented demo workspace — no real session data, paths or ledger text. The `1.0.0 bs sb` service marker in the header is hidden in these shots.
+
 ## What it shows
 
 ```
