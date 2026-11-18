@@ -1,6 +1,6 @@
 {
   "name": "dsh-turn-timeline",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "DSH web plugin: a left-sidebar panel that turns every session into a task timeline — one row per task stretch, the turns behind it, the files each turn produced, and a click straight into the right sidebar preview.",
   "type": "module",
   "main": "lib/index.js",
